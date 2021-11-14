@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<body>
+  
+<div class="container">  
+  <form id="contact" action="/order" method="post">
+    <h3>Add Food Item</h3>
+   
+    <fieldset>
+      <input placeholder="Dish Name" type="text" tabindex="1" required autofocus name="dishName">
+    </fieldset>
+    <fieldset>
+      <input placeholder=" Restaurant Name" type="text" tabindex="1" required autofocus name="restName">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Price" type="text" tabindex="1" required autofocus name="price">
+    </fieldset>
+  <p>Upload food item image</p>
+    <div class="upload" id="pics">
+      <input type="file" id="myFile" name="filename" >
+    
+    </div>
+    
+   
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+   
+  </form>
+</div>
+
+</body>
+</html>
+
+

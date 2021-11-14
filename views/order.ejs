@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cards</title>
+ <link rel="stylesheet" href="/css/form-style.css">
+</head>
+
+
+<body>
+
+   <div class="wrapper">
+      <h2 class="head-title">Explore Our Foods</h2>
+      <p class="head-text"></p>
+   
+      <div class="cards"> <%= foods.card %>
+        <% if (foods.length > 0) { %>
+          <% foods.forEach(food => { %>
+       
+      
+        <div class="card">
+          <img class="card__image" src="https://images.unsplash.com/photo-1558672367-241cd1a01b16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80" alt="">
+          <div class="card__content">
+            <div class="card__header">
+        
+             
+              <h4 class="card__title"> <%= food.dishName %> </h4>
+             
+              <span class="card__price"> <%= food.restName %> </span>
+            </div>
+            <h4 class="card__title"> <%= food.price %> </h4>
+      
+            <% }) %>
+            <% } else { %>
+              <p>There are no food to display...</p>
+            <% } %>
+          
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+</body>
+</html>
